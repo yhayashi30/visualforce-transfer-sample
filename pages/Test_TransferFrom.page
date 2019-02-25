@@ -1,0 +1,20 @@
+<apex:page controller="TransferController">
+<apex:form id="form">
+<head>
+</head>
+<body>
+    <apex:pageBlock title="My Content" mode="edit">
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!confirm}" value="Confirm"/>
+                <apex:commandButton action="{!next}" value="Next"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="My Content Section" columns="2">
+                <apex:inputText value="{!test1}"/>
+                <apex:inputText value="{!test2}"/>
+                <apex:inputText value="{!test3}"/>
+                <apex:inputText value="{!test4}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+</body>
+</apex:form>
+</apex:page>

@@ -1,0 +1,17 @@
+<apex:page controller="TransferReceiveController">
+<apex:form id="form">
+<head>
+</head>
+<body>
+    <apex:pageBlock title="My Content" mode="detail ">
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!returnPage}" value="Return"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="My Content Section Param" columns="2">
+                <apex:outputText value="{!test3}"/>
+                <apex:outputText value="{!test4}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+</body>
+</apex:form>
+</apex:page>
